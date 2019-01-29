@@ -1,17 +1,11 @@
-/* Code for WATS 3020 FizzBuzz Assignment */
-
 let isInteger,
     maxNumber,
     fbResults,
     fbText;
 
-
-// Initial value set to false
-
 isInteger = false;
 
 // Loop to check for user entered "good number." 
-// Max number limit will be verified as a suitable integer (max number > 0). Loop will stop once conditions are met.
 
 while (!isInteger) {
     let input = window.prompt('Enter a number greater than 0:');
@@ -22,14 +16,11 @@ while (!isInteger) {
     }
 }
 
-// console.log("maxNumber",maxNumber);
-
 // Initialized the `fbResults` variable to an empty Array
 
 fbResults = [];
 
-// Loop to execute numbers up to "maxNumber." Logic will calculate for fizz, buzz, and fizzbuzz.
-// Results will be pushed/stored to empty array "fbResults."
+// Loop to execute numbers up to "maxNumber" and calculate for fizz, buzz, and fizzbuzz.
 
 for (let i = 1; i <= maxNumber; i++) {
     let outputString = '';
@@ -49,7 +40,6 @@ for (let i = 1; i <= maxNumber; i++) {
 }
 
 // `for ... of` loop to concatenate the values from `fbResults` into the variable `fbText`.
-// Display on HTML page sequence of 1, 2, fizz, etc.
 
 fbText = '';
 
